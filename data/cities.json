@@ -1,0 +1,56 @@
+{
+    "United States": {
+        "Maine": [
+            "houlton",
+            "bangor",
+            "portland"
+        ],
+        "New Hampshire": [
+            "Manchester"
+        ],
+        "Vermont": [
+            "Burlington"
+        ],
+        "Massachusetts": [
+            "Boston"
+        ],
+        "New York": [
+            "Albany",
+            "Rochester",
+            "New York"
+        ],
+        "Rhode Island": [
+            "Providence"
+        ],
+        "Connecticut": [
+            "Hartford"
+        ],
+        "Pennsylvania": [
+            "Philadelphia",
+            "Pittsburgh"
+        ],
+        "Maryland": [
+            "Baltimore",
+            "Washington D.C."
+        ],
+        "Virgina": [
+            "Norfolk"
+        ],
+        "North Carolina": [
+            "Raleigh",
+            "Fayetteville",
+            "Wilmington"
+        ],
+        "South Carolina": [
+            "Columbia"
+        ],
+        "Georgia": [
+            "Augusta",
+            "Savannah",
+            "Atlanta"
+        ]
+    },
+    "Canada": {
+        "Ontario": []
+    }
+}
