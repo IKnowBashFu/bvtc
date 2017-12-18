@@ -1,4 +1,4 @@
-.env
+config/config.json
 node_modules
 .vscode
 .tern-project

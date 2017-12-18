@@ -4,11 +4,11 @@ const express = require('express');
 const http = require('http');
 const app = express();
 
+const cities = require('./data/cities.json');
+
 const routes = require('./api/v1/routes');
 
-const database = require('./database');
-
-database.testDB();
+console.dir(inserts);
 
 app.use('/api/v1', routes);
 
