@@ -1,9 +1,9 @@
 {
     "United States": {
         "Maine": [
-            "houlton",
-            "bangor",
-            "portland"
+            "Houlton",
+            "Bangor",
+            "Portland"
         ],
         "New Hampshire": [
             "Manchester"
@@ -47,10 +47,242 @@
         "Georgia": [
             "Augusta",
             "Savannah",
-            "Atlanta"
+            "Atlanta",
+            "Metter",
+            "Macon",
+            "Kingston",
+            "Valdosta"
+        ],
+        "Florida": [
+            "Pensacola",
+            "Tallahassee",
+            "Jacksonville",
+            "Gainesville",
+            "Tampa",
+            "Orlando",
+            "New Smyrna Beach",
+            "Palm Coast",
+            "Yeehaw Junction",
+            "Naples",
+            "Boca Raton",
+            "Ft Lauderdale",
+            "Miami",
+            "Key Largo",
+            "Key West"
+        ],
+        "Ohio": [
+            "Cleveland",
+            "Columbus"
+        ],
+        "West Virginia": [
+            "Charleston"
+        ],
+        "Kentucky": [
+            "Louisville"
+        ],
+        "Tennessee": [
+            "Nashville",
+            "Memphis"
+        ],
+        "Alabama": [
+            "Mobile"
+        ],
+        "Michigan": [
+            "Detroit",
+            "Grand Rapids"
+        ],
+        "Indiana": [
+            "Indianapolis"
+        ],
+        "Mississippi": [
+            "Jackson"
+        ],
+        "Wisconsin": [
+            "Green Bay",
+            "Milwaukee"
+        ],
+        "Illinois": [
+            "Chicago"
+        ],
+        "Minnesota": [
+            "Duluth",
+            "Minneapolis",
+            "Grand Forks"
+        ],
+        "Iowa": [
+            "Des Moines",
+            "Iowa 80"
+        ],
+        "Missouri": [
+            "Kansas City",
+            "St Louis",
+            "Springfield"
+        ],
+        "Arkansas": [
+            "Little Rock"
+        ],
+        "Louisiana": [
+            "New Orleans"
+        ],
+        "North Dakota": [
+            "Bismarck",
+            "Fargo"
+        ],
+        "South Dakota": [
+            "Sioux Falls",
+            "Rapid City"
+        ],
+        "Nebraska": [
+            "Omaha"
+        ],
+        "Kansas": [
+            "Wichita"
+        ],
+        "Oklahoma": [
+            "Tulsa",
+            "Oklahoma City",
+            "Lawton"
+        ],
+        "Texas": [
+            "Amarillo",
+            "Lubbock",
+            "Childress",
+            "Wichita Falls",
+            "Abilene",
+            "Dallas",
+            "San Antonio",
+            "Houston"
+        ],
+        "Montana": [
+            "Billings",
+            "Butte",
+            "Missoula"
+        ],
+        "Wyoming": [
+            "Cheyenne"
+        ],
+        "Colorado": [
+            "Denver",
+            "Colorado Springs",
+            "Limon",
+            "Selbert",
+            "Kit Carson",
+            "Cheyenne Wells",
+            "El Paso"
+        ],
+        "New Mexico": [
+            "Farmington",
+            "Raton",
+            "Gallup",
+            "Santa Fe",
+            "Tucumari",
+            "Albuquerque",
+            "Socorro",
+            "Clovis",
+            "Roswell",
+            "Alamogordo",
+            "Las Cruces",
+            "Artesia",
+            "Carlsbad",
+            "Hobbs"
+        ],
+        "Idaho": [
+            "Boise",
+            "Twin Falls",
+            "Idaho Falls"
+        ],
+        "Utah": [
+            "Salt Lake City",
+            "Moab"
+        ],
+        "Arizona": [
+            "Page",
+            "Kayenta",
+            "Grand Canyon Village",
+            "Kingman",
+            "Flagstaff",
+            "Holbrook",
+            "Show Low",
+            "Camp Verde",
+            "Ehronberg",
+            "Phoenix",
+            "Tuscon",
+            "San Simon",
+            "Nogales",
+            "Sierra Vista"
+        ],
+        "Washington": [
+            "Seattle",
+            "Spokane"
+        ],
+        "Oregon": [
+            "Portland",
+            "Eugene"
+        ],
+        "Nevada": [
+            "Jackpot",
+            "McDermitt",
+            "Winnemucca",
+            "Elko",
+            "Reno",
+            "Ely",
+            "Carson City",
+            "Tonopah",
+            "Pioche",
+            "Las Vegas",
+            "Primm"
+        ],
+        "California": [
+            "Hornbrook",
+            "Eureka",
+            "Redding",
+            "Uklah",
+            "Truckee",
+            "San Rafael",
+            "Sacramento",
+            "San Francisco",
+            "Stockton",
+            "Oakland",
+            "Oakdale",
+            "Santa Cruz",
+            "Fresno",
+            "Huron",
+            "Santa Maria",
+            "Bakersfield",
+            "Oxnard",
+            "Barstow",
+            "Carlsbad",
+            "San Diego",
+            "El Centro"
         ]
     },
     "Canada": {
-        "Ontario": []
+        "New Brunswick": [
+            "Halifax",
+            "Yarmouth",
+            "Truro",
+            "Moncton",
+            "Fredericton",
+            "Caraquet",
+            "Grand Falls"
+        ],
+        "Quebec": [
+            "Matane",
+            "Gaspe",
+            "Riviere-du-Loup",
+            "Sept-iles",
+            "Baie-Comeau",
+            "Saguenay",
+            "Quebec City",
+            "La Tuque",
+            "Trois-Riviere",
+            "Montreal"
+        ],
+        "Newfoundland": [
+            "Labrador City"
+        ],
+        "Ontario": [
+            
+        ]
     }
 }
