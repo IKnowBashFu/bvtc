@@ -2,6 +2,7 @@
 
 const cities = require('../data/cities.json');
 
+
 module.exports = {
   up: (queryInterface, Sequelize) => {
     /*
@@ -15,26 +16,17 @@ module.exports = {
     }], {});
     */
     let inserts = [];
-    let curCountry = 'United States';
-    let curState = '';
-
-    console.log('Hey fuckers!');
-
-    for (var country = 0; country < cities.length; country++) {
-      curCountry = Object.keys(cities)[country];
-      console.log(curCountry);
-      for (state in Object.keys(cities[curCountry])) {
-        curState = Object.keys(cities[curCountry])[state];
-        for (city in cities[curCountry][curState]) {
-          inserts.push({
-            name: cities[curCountry][curState][city],
-            state: curState,
-            country: curCountry
+    for (const country in cities) {
+        for (const state in cities[country]) {
+          cities[country][state].forEach(town => {
+            inserts.push({
+              name: town,
+              state: state,
+              country: country
+            });
           });
         }
-      }
     }
-    
     return queryInterface.bulkInsert('Cities', inserts, {});
   },
   
