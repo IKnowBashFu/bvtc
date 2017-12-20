@@ -16,8 +16,8 @@ module.exports = {
     }], {});
     */
     let inserts = [];
-    for (const country in cities) {
-        for (const state in cities[country]) {
+    for (let country in cities) {
+        for (let state in cities[country]) {
           cities[country][state].forEach(town => {
             inserts.push({
               name: town,
@@ -38,5 +38,7 @@ module.exports = {
     Example:
     return queryInterface.bulkDelete('Person', null, {});
     */
+
+    return queryInterface.bulkDelete('Cities', null, {});
   }
 };

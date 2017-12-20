@@ -4,7 +4,9 @@
   "description": "Virtual Trucking Company Backend",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node dist/server.js",
+    "db:migrate": "sequelize db:migrate",
+    "db:seed": "sequelize db:seed:all"
   },
   "author": "Chris 'IKnowBashFu' Vollink",
   "contributors": [
