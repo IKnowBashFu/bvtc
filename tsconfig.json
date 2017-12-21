@@ -4,9 +4,11 @@
         "target": "es2016",
         "jsx": "preserve",
         "outDir": "dist",
+        "allowJs": true
     },
     "include": [
-        "src/**/*.ts"
+        "src/**/*.ts",
+        "src/**/*.js"
     ],
     "exclude": [
         "node_modules",

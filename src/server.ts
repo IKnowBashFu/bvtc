@@ -1,14 +1,16 @@
-require('dotenv').config();
-
 import * as express from 'express';
 import { Server } from 'http';
+
+import { V1Router } from './api/v1';
+
 const app = express();
 
-const cities = require('./data/cities.json');
+app.use('/v1', V1Router);
 
-const routes = require('./api/v1/routes');
-
-app.use('/api/v1', routes);
+app.use("*", (req, res) => {
+    res.status(404);
+    res.send('Error 404');
+});
 
 const server = new Server(app);
 
