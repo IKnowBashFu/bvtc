@@ -1,29 +1,31 @@
-import * as express from 'express';
+import * as bcrypt from 'bcrypt';
 import * as bodyParser from 'body-parser';
+import * as express from 'express';
 
-const User = require('../../../models/user');
+import User from '../../../database/models/user';
 
 export const UsersRouter = express.Router();
 
 UsersRouter.use(bodyParser.json());
 
 UsersRouter.get('/', (req, res) => {
-    res.status(200);
-    res.send('Users!');
+	res.status(200);
+	res.send('Users!');
 });
 
 UsersRouter.post('/', (req, res) => {
-    console.dir(req.body);
+	const body = req.body;
 
-    User().create({
-        firstName: 'Chris',
-        lastName: 'Vollink',
-        username: 'blergh',
-        email: 'me@chrisvollink.com'
-    }).then((user) => {
-        console.dir(`User returned: ${user}`);
-    });
+	if (body.username !== undefined && body.password !== undefined && body.email !== undefined) {
+		const user = new User({
+			email: body.email,
+			password: bcrypt.hashSync(body.password, 10),
+			username: body.username
+		});
 
-    res.status(200);
-    res.send({message: 'Hello!'});
+		user.save();
+	}
+
+	res.status(200);
+	res.send({message: 'Hello!'});
 });

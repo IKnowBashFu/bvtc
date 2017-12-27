@@ -1,18 +1,19 @@
-require('dotenv').config();
-
+import { config } from 'dotenv';
 import * as mongoose from 'mongoose';
 import City from './models/city';
 
+config();
+
 const cities  = require('../data/cities.json');
 
-require('mongoose').Promise = global.Promise;
+(mongoose as any).Promise = global.Promise;
 
-if (process.env.DB_SECURED == 'true') {
-	mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`, {
+if (process.env.DB_SECURED === 'true') {
+	mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASS}` +
+	`@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`, {
 		useMongoClient: true
 	});
-}
-else {
+} else {
 	mongoose.connect(`mongodb://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`, {
 		useMongoClient: true
 	});
@@ -22,11 +23,11 @@ console.log('Beginning seed...');
 
 for (let country in cities) {
 	for (let state in cities[country]) {
-		cities[country][state].forEach(city => {
+		cities[country][state].forEach((city) => {
 			let cityDoc = new City({
 				name: city,
-				state: state,
-				country: country
+				state,
+				country
 			});
 
 			cityDoc.save((err) => {
